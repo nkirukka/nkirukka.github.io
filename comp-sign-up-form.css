@@ -82,8 +82,8 @@ button:hover {
 .small {
   margin-top: 6px;
   color: rgb(179, 172, 163);
-  padding: 0 5rem;
-  font-size: 1rem;
+  padding: 0 .2rem;
+  font-size: .5rem;
 }
 .terms {
   color: red;
