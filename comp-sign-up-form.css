@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
 body {
+  background: url("./imgs/bg-intro-desktop.png") repeat;
   text-align: center;
-  background-color: rgb(197, 34, 34);
+  background-color: rgba(233, 28, 28, 0.781);
   color: rgb(247, 234, 234);
+  font-family: 'Sora', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 section {
-  margin: 0.5em;
+  margin: 0.9em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,27 +19,29 @@ h1 {
   font-size: 2.9rem;
 }
 .details {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  padding: 10px 50px;
 }
-h2 {
+.try-free {
+  font-weight: bold;
   background-color: purple;
   border-radius: 0.3em;
   padding: 0.9em 5rem;
   font-size: 1.3rem;
   font-weight: lighter;
-}
-h2 .free {
-  font-weight: bold;
+  margin-bottom: 20px;
+  box-shadow: 0px 10px 13px -7px #000000, 0px 9px 6px -3px rgba(0,0,0,0.15);
 }
 
 .form-group {
+  box-shadow: 0px 10px 13px -7px #000000, 0px 9px 6px -3px rgba(0,0,0,0.15);
   background-color: white;
   border-radius: 0.33em;
   padding-bottom: 30px;
   flex-basis: 90%;
 }
 .form-group input {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 1em;
   width: 80%;
   padding: 1.7em 1em;
@@ -70,8 +77,10 @@ button {
 }
 button:hover {
   background-color: rgb(42, 182, 42);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 9px 6px -3px rgba(0,0,0,0.15);
 }
 .small {
+  margin-top: 6px;
   color: rgb(179, 172, 163);
   padding: 0 5rem;
   font-size: 1rem;
@@ -85,10 +94,31 @@ button:hover {
 @media only screen and (min-width: 750px) {
   section {
     flex-direction: row;
+    margin-left: 0;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  .details{
+    margin-right: -190px;
+    font-size: 2rem;
   }
   .form-group{
-    display: flex;
-    flex-grow: 1;
+    width: 230%;
+  }
+  .try-free{
+    background-color: purple;
+    border-radius: .5em;
+    position: relative;
+    left: 30%;
+    bottom: 260px;
+    transform: translate(44%, -67%);
+    padding: 20px 50px;
+    width: 144%;
+  }
+  .small{
+    font-size: .1rem;
   }
  
 }
