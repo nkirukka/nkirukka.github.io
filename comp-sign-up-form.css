@@ -1,0 +1,94 @@
+body {
+  text-align: center;
+  background-color: rgb(197, 34, 34);
+  color: rgb(247, 234, 234);
+}
+section {
+  margin: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 2.9rem;
+}
+.details {
+  font-size: 1.5rem;
+}
+h2 {
+  background-color: purple;
+  border-radius: 0.3em;
+  padding: 0.9em 5rem;
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+h2 .free {
+  font-weight: bold;
+}
+
+.form-group {
+  background-color: white;
+  border-radius: 0.33em;
+  padding-bottom: 30px;
+  flex-basis: 90%;
+}
+.form-group input {
+  font-size: 1rem;
+  margin-bottom: 1em;
+  width: 80%;
+  padding: 1.7em 1em;
+  border-radius: 0.33em;
+  border: 1px solid;
+}
+.form-group input:first-child {
+  margin-top: 2em;
+}
+.form-group input::placeholder {
+  color: rgb(31, 32, 32);
+  font-size: 1.2rem;
+}
+.form-group input:placeholder-shown {
+  color: rgb(231, 229, 238);
+}
+.form-group input:hover,
+.form-group input:focus {
+  border-color: rgb(142, 77, 216);
+  outline-color: rgb(199, 194, 188);
+}
+button {
+  width: 87%;
+  height: 60px;
+  background-color: rgb(67, 173, 67);
+  color: white;
+  padding: 1.2em 2em;
+  max-width: 100%;
+  border-radius: 0.4em;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(42, 182, 42);
+}
+.small {
+  color: rgb(179, 172, 163);
+  padding: 0 5rem;
+  font-size: 1rem;
+}
+.terms {
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 750px) {
+  section {
+    flex-direction: row;
+  }
+  .form-group{
+    display: flex;
+    flex-grow: 1;
+  }
+ 
+}
