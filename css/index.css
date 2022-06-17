@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(164, 153, 187);
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    text-align: center;
+}
+a{
+    
+    margin-bottom: 12px;
+    text-decoration: none;
+    background-color: #00509d;
+    color: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    transform: translateY(0);
+    transition: transform .5s;
+}
+a:hover{
+    background-color: #11304d;
+    transform: translateY(-5px);
+    box-shadow: -7px 69px 87px -46px rgba(255, 0, 0, 0.55);
+}
