@@ -1,27 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   background: url("./imgs/bg-intro-desktop.png") repeat;
   text-align: center;
   background-color: rgba(233, 28, 28, 0.781);
   color: rgb(247, 234, 234);
-  font-family: 'Sora', sans-serif;
-  margin: 0;
+  font-family: "Sora", sans-serif;
+  /* margin: 10px 20px; */
   padding: 0;
-  overflow-x: hidden;
+  height: 100vh;
 }
 section {
-  margin: 0.9em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10px 20px;
 }
 h1 {
   font-size: 2.9rem;
+  margin-bottom: 20px;
 }
 .details {
   font-size: 1.3rem;
   padding: 10px 50px;
+  margin: 10px 20px;
 }
 .try-free {
   font-weight: bold;
@@ -31,10 +37,10 @@ h1 {
   font-size: 1.3rem;
   font-weight: lighter;
   margin-bottom: 20px;
-  box-shadow: 0px 10px 13px -7px #000000, 0px 9px 6px -3px rgba(0,0,0,0.15);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 9px 6px -3px rgba(0, 0, 0, 0.15);
 }
 .form-group {
-  box-shadow: 0px 10px 13px -7px #000000, 0px 9px 6px -3px rgba(0,0,0,0.15);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 9px 6px -3px rgba(0, 0, 0, 0.15);
   background-color: white;
   border-radius: 0.33em;
   padding-bottom: 30px;
@@ -65,7 +71,7 @@ h1 {
 }
 button {
   width: 87%;
-  height: 60px;
+  height: 50px;
   background-color: rgb(67, 173, 67);
   color: white;
   padding: 1.2em 2em;
@@ -77,69 +83,82 @@ button {
 }
 button:hover {
   background-color: rgb(42, 182, 42);
-  box-shadow: 0px 10px 13px -7px #000000, 0px 9px 6px -3px rgba(0,0,0,0.15);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 9px 6px -3px rgba(0, 0, 0, 0.15);
 }
 .small {
   margin-top: 6px;
   color: rgb(179, 172, 163);
-  padding: 0 .2rem;
-  font-size: .5rem;
+  padding: 0 0.2rem;
+  font-size: 0.5rem;
 }
 .terms {
   color: red;
   font-weight: bold;
   text-decoration: none;
 }
-footer{
- width: auto;
- background-color: rgb(207, 23, 23);
- padding: 1px 20px;
+footer {
+  background-color: rgb(207, 23, 23);
+  padding: 10px 40px;
+  margin-top: 10vh;
 }
-footer ul{
+footer ul {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-footer ul li{
+footer ul li {
   list-style: none;
   color: rgba(219, 224, 230, 0.747);
   margin-left: 10px;
 }
-footer ul li a{
+footer ul li a {
   text-decoration: none;
   color: rgb(63, 223, 116);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
 }
-@media only screen and (min-width: 910px) {
-  section {
-    flex-direction: row;
-    margin-left: 0;
-    position: absolute;
+@media only screen and (min-width: 670px) {
+  section, .details {
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 900px) {
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+  .container {
+    display: flex;
+    width: min-content;
+    padding: 10px 0px;
+    position: relative;
     top: 50%;
-    left: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
   }
-  .details{
-    margin-right: -190px;
+  .details, section{
+    width: 500px;
+  }
+  .details h1{
+    font-size: 4rem;
+  }
+  .details p{
     font-size: 2rem;
   }
-  .form-group{
-    width: 230%;
+  .try-free {
+    width: 470px;
   }
-  .try-free{
-    background-color: purple;
-    border-radius: .5em;
+  .small {
+    font-size: 0.1rem;
+  }
+  footer {
     position: relative;
-    left: 30%;
-    bottom: 200px;
-    transform: translate(40%, -67%);
-    padding: 20px 50px;
-    width: 200%;
+    top: 19vh;
   }
-  .small{
-    font-size: .1rem;
-  } 
 }
