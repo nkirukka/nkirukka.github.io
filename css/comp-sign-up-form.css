@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  background: url("./imgs/bg-intro-desktop.png") repeat;
+  background: url("/imgs/bg-intro-desktop.png") repeat;
   text-align: center;
   background-color: rgba(233, 28, 28, 0.781);
   color: rgb(247, 234, 234);
