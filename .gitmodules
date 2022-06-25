@@ -1,3 +1,6 @@
 [submodule "four-card-feature"]
 	path = four-card-feature
 	url = https://github.com/nkirukka/four-card-feature.git
+[submodule "search-box-expand"]
+	path = search-box-expand
+	url = https://github.com/nkirukka/search-box-expand.git
