@@ -52,7 +52,7 @@ h1 {
   display: block;
  margin-top: 4px;
  margin-left: 25px;
-  font-size: 2px;
+  font-size: .9rem;
   text-align: left;
 
 }
@@ -104,7 +104,7 @@ h1 {
 .small {
   margin-top: 6px;
   color: rgb(179, 172, 163);
-  padding: 0 0.2rem;
+  padding: 0 2.7em;
   font-size: 0.5rem;
 }
 .terms {
@@ -194,6 +194,6 @@ footer ul li a {
   }
   footer {
     position: relative;
-    top: 19vh;
+    bottom: 1vh;
   }
 }
