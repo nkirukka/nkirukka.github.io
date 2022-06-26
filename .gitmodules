@@ -4,3 +4,6 @@
 [submodule "search-box-expand"]
 	path = search-box-expand
 	url = https://github.com/nkirukka/search-box-expand.git
+[submodule "sunnyside-agency-landing-page"]
+	path = sunnyside-agency-landing-page
+	url = https://github.com/nkirukka/sunnyside-agency-landing-page.git
