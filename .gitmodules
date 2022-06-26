@@ -7,3 +7,6 @@
 [submodule "sunnyside-agency-landing-page"]
 	path = sunnyside-agency-landing-page
 	url = https://github.com/nkirukka/sunnyside-agency-landing-page.git
+[submodule "sunny-side_agency"]
+	path = sunny-side_agency
+	url = https://github.com/nkirukka/sunny-side_agency.git
