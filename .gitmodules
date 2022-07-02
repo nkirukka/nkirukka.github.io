@@ -19,3 +19,6 @@
 [submodule "submodules/card_reveal"]
 	path = submodules/card_reveal
 	url = https://github.com/nkirukka/card_reveal.git
+[submodule "submodules/neon-glow-animation"]
+	path = submodules/neon-glow-animation
+	url = https://github.com/nkirukka/neon-glow-animation.git
