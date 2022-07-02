@@ -16,3 +16,6 @@
 [submodule "submodules/search-box-expand"]
 	path = submodules/search-box-expand
 	url = https://github.com/nkirukka/search-box-expand.git
+[submodule "submodules/card_reveal"]
+	path = submodules/card_reveal
+	url = https://github.com/nkirukka/card_reveal.git
