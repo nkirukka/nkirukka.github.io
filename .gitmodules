@@ -10,3 +10,9 @@
 [submodule "sunny-side_agency"]
 	path = sunny-side_agency
 	url = https://github.com/nkirukka/sunny-side_agency.git
+[submodule "submodules/four-card-feature"]
+	path = submodules/four-card-feature
+	url = https://github.com/nkirukka/four-card-feature.git
+[submodule "submodules/search-box-expand"]
+	path = submodules/search-box-expand
+	url = https://github.com/nkirukka/search-box-expand.git
