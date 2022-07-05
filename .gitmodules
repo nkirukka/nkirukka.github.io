@@ -22,3 +22,6 @@
 [submodule "submodules/neon-glow-animation"]
 	path = submodules/neon-glow-animation
 	url = https://github.com/nkirukka/neon-glow-animation.git
+[submodule "submodules/fylo-dark-theme-landing-page"]
+	path = submodules/fylo-dark-theme-landing-page
+	url = https://github.com/nkirukka/fylo-dark-theme-landing-page.git
