@@ -25,3 +25,6 @@
 [submodule "submodules/fylo-dark-theme-landing-page"]
 	path = submodules/fylo-dark-theme-landing-page
 	url = https://github.com/nkirukka/fylo-dark-theme-landing-page.git
+[submodule "submodules/product-preview-card-component"]
+	path = submodules/product-preview-card-component
+	url = https://github.com/nkirukka/product-preview-card-component.git
