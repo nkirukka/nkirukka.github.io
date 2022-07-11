@@ -8,7 +8,7 @@ div{
     max-width: 100%;
     text-align: center;
 }
-a{
+.gh-page{
     
     margin-bottom: 12px;
     text-decoration: none;
@@ -19,7 +19,7 @@ a{
     transform: translateY(0);
     transition: transform .5s;
 }
-a:hover{
+.gh-page:hover{
     background-color: #11304d;
     transform: translateY(-5px);
     box-shadow: -7px 69px 87px -46px rgba(255, 0, 0, 0.55);
