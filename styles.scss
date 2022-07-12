@@ -169,7 +169,7 @@ header {
     a {
       position: relative;
       color: var(--dark-blue-bg);
-      font-size: 1.7rem;
+      font-size: 1.4rem;
       font-family: "Open Sans", serif;
       font-weight: 600;
       background: transparent;
@@ -231,6 +231,8 @@ main {
   width: 100%;
 // display: grid;
 // grid-template-columns: repeat(2, 1fr);
+display: flex;
+flex-wrap: wrap;
   .projects-card {
     position: relative;
     width: 350px;
@@ -292,13 +294,19 @@ main {
         border: 2px solid var(--dark-blue-bg);
         color: rgb(44, 44, 46);
       }
-      &:hover {
-        opacity: 1;
-        transition-delay: 0.7s;
-      }
     }
   }
+  .projects-card:hover .projects-card__details {
+    opacity: 1;
+    transition-delay: 0.7s;
+  }
+  .projects-card:nth-of-type(2){
+    background-image: url("../imgs/new-desk-view.png");
+  background-size: cover;
+  background-position: center;
+  }
 }
+
 .feature {
   text-align: center;
   color: black;
