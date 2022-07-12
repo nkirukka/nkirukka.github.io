@@ -165,7 +165,7 @@ header nav ul li a:hover {
   top: -10%;
   left: 0;
   right: 0;
-  z-index: 12;
+  z-index: 102;
   background-color: var(--white);
   width: 90%;
   height: 30vh;
@@ -228,7 +228,7 @@ header nav ul li a:hover {
   cursor: pointer;
 }
 .burger .hamburger {
-  transform: scale(2);
+  transform: scale(1.5);
 }
 .burger .hamburger.active {
   display: none;

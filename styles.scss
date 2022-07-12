@@ -167,7 +167,7 @@ header {
   top: -10%; //5.2 when active
   left: 0;
   right: 0;
-  z-index: 12;
+  z-index: 102;
   background-color: var(--white);
   width: 90%;
   height: 30vh;
@@ -226,7 +226,7 @@ header {
   color: var(--white);
   cursor: pointer;
   .hamburger {
-    transform: scale(2);
+    transform: scale(1.5);
   }
   .hamburger.active {
     display: none;
