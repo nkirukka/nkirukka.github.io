@@ -1,18 +1,12 @@
-const burger = document.querySelector(".burger");
-const hamburger = document.querySelector(".hamburger");
-const closeIcon = document.querySelector(".close");
-const mobileMenu = document.querySelector(".mobile-menu");
+const closeIcon = document.querySelector(".close-icon");
+const burgerIcon = document.querySelector(".burger");
+const menu = document.querySelector(".nav-links__container");
 
-// const line1 = document.querySelector(".line1");
-// const line2 = document.querySelector(".line2");
-// const line3 = document.querySelector(".line3");
-
-burger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    closeIcon.classList.toggle("active");
-    mobileMenu.classList.toggle("active");
-    // line2.style.transform = "scaleY(0)";
-    // line1.style.transform = "rotate(45deg)";
-    // line3.style.transform = "rotate(-45deg)";
+burgerIcon.addEventListener("click", () => {
+    burgerIcon.classList.toggle("active");
+    menu.classList.toggle("active");
 })
-// "rotate(45deg)"
+closeIcon.addEventListener("click", () => {
+    closeIcon.classList.toggle("active");
+    menu.classList.toggle("active");
+});
