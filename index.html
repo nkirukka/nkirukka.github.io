@@ -5,103 +5,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7213093337.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./dist/styles.css">
-    <title>Nkiruka Ebele | Home Page</title>
+    <title>Nkiruka Ebele | Homepage</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-    <div class="nav-box">
-            <!-- Nav -->
-            <nav>
-                <!-- Nav Brand -->
-                <div class="logo">
-                    nk
-                </div>
-                <!--  Desktop Menu-->
-                <ul class="nav-links">
-                    <li class="nav-item"><a href="">About</a></li>
-                    <li class="nav-item"><a href="">Projects</a></li>
-                    <li class="nav-item"><a href="">Contact</a></li>
+    <!-- full width -->
+    <nav class="nav">
+        <!-- limit the width so it doesnt to far out -->
+        <div class="nav-box flex">
+
+            <!-- Logo -->
+            <div class="logo">nK.</div>
+
+            <button class="burger">
+                <div class="burger1 burger-lines"></div>
+                <div class="burger2 burger-lines"></div>
+            </button>
+            <!-- Nav Links -->
+            <div class="nav-links__container flex">
+                <ul class="nav-links flex">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
-                <!-- Menu Toggle -->
-                <div class="burger">
-                    <span class="hamburger">&#9776</span>
-                    <span class="close">&times</span>
-                </div>
-            </nav>
+
+                <!-- Close Icon -->
+                <button type="button" class="close-icon">
+                    <div class="line1 lines"></div>
+                    <div class="line2 lines"></div>
+                </button>
+            </div>
+            <!-- Nav Links End -->
+        </div>
+    </nav>
+
+    <section class="hero">
+        <img src="../imgs/3d-girl.png" alt="" class="hero-img">
+        <div class="hero-details">
+            <h1 class="hero-details__name">Nkiruka Ebele</h1>
+            <p class="hero-details__title">
+                Web Developer
+            </p>
+            <p class="hero-details__description">
+                I love to craft beautiful, efficient and scalable websites with
+                great user experiences, and I'd love to work on your next project.
+            </p>
+            <button type="button" class="btn">Get In Touch</button>
+            <hr>
+        </div>
+    </section>
+
+<section class="projects">
+<h2>Key Projects</h2>
+
+<div class="projects-card">
+    <img src="../imgs/fylo.png" alt="" class="projects-card__img">
+    <div class="projects-card__details">
+        <h3 class="projects-card__title">
+            Fylo Landin Page
+        </h3>
+        <p class="projects-card__description">
+Landing page with user activity enabled
+        </p>
+        <a href="" class="projects-card__btn">Visit</a>
     </div>
-        <!-- Mobile Menu -->
-        <div class="mobile-menu">
-            <ul>
-                <li><a href="">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </div>
+</div>
+</section>
 
-        <div class="overview">
-            <span class="greet">Hi, I'm <span class="name">Nkiruka</span></span>
-            <h1>web Developer</h1>
-        </div>
-        <!-- Background Cubes -->
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
-    </header>
-
-    <!-- Container -->
-    <div class="container">
-        <div class="feature">
-            <h2 id="projects">Projects</h2>
-            <p>Part of my learning process, below are some of my favorite works.</p>
-            <small>(Press and hold or hover over image to view details)</small>
-        </div>
-        <!-- This will be the img bg -->
-        <div class="projects-box">
-            <!-- fylo -->
-            <div class="projects-card">
-                <div class="projects-card__details">
-                    <h2>Fylo Landing Page</h2>
-                    <a href="https://nkirukka.github.io/submodules/fylo-dark-theme-landing-page/">visit</a>
-                </div>
-            </div>
-            <!-- sunny -->
-            <div class="projects-card">
-                <div class="projects-card__details">
-                    <h2>Sunny Side Agency</h2>
-                    <a href="https://nkirukka.github.io/submodules/sunny-side_agency/">visit</a>
-                </div>
-            </div>
-            <!-- four -->
-            <div class="projects-card">
-                <div class="projects-card__details">
-                    <h2>Four Card Feature</h2>
-                    <a class="gh-page" href="https://nkirukka.github.io/submodules/four-card-feature/">visit</a>
-                </div>
-            </div>
-            <!-- preview-->
-            <div class="projects-card">
-                <div class="projects-card__details">
-                    <h2>Preview Card Component</h2>
-                    <a class="gh-page"
-                        href="https://nkirukka.github.io/submodules/product-preview-card-component/">visit</a>
-                </div>
-            </div>
-        </div>
-        <a href="" class="see-more">See more...</a>
-    </div>
-
-
-    <!-- <footer>
-        <p>&copy Nkiruka Ebele</p>
-    </footer> -->
-
-    <script src="./js/app.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>
