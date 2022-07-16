@@ -23,27 +23,35 @@
                 <div class="burger1 burger-lines"></div>
                 <div class="burger2 burger-lines"></div>
             </button>
-            <!-- Nav Links -->
+            <!-- Nav Links Container -->
             <div class="nav-links__container flex">
+                <div class="mob-menu flex">
+                    <div class="logo">nK.</div>
+
+                    <!-- Close Icon -->
+                    <button type="button" class="close-icon">
+                        <div class="line1 lines"></div>
+                        <div class="line2 lines"></div>
+                    </button>
+                </div>
+                <!-- Nav Links -->
                 <ul class="nav-links flex">
                     <li><a href="">Home</a></li>
                     <li><a href="">Projects</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
-
-                <!-- Close Icon -->
-                <button type="button" class="close-icon">
-                    <div class="line1 lines"></div>
-                    <div class="line2 lines"></div>
-                </button>
             </div>
             <!-- Nav Links End -->
         </div>
     </nav>
 
     <section class="hero">
-        <img src="../imgs/3d-girl.png" alt="" class="hero-img">
+        <div class="hero-img-container">
+            <img src="../imgs/3d-girl.png" alt="" class="hero-img">
+
+        </div>
+
         <div class="hero-details">
             <h1 class="hero-details__name">Nkiruka Ebele</h1>
             <p class="hero-details__title">
@@ -53,27 +61,112 @@
                 I love to craft beautiful, efficient and scalable websites with
                 great user experiences, and I'd love to work on your next project.
             </p>
-            <button type="button" class="btn">Get In Touch</button>
+            <a href="mailto:specialebele@gmail.com" class="btn">Get In Touch</a>
             <hr>
         </div>
     </section>
 
-<section class="projects">
-<h2>Key Projects</h2>
+    <section class="projects">
+        <h2>Key Projects</h2>
 
-<div class="projects-card">
-    <img src="../imgs/fylo.png" alt="" class="projects-card__img">
-    <div class="projects-card__details">
-        <h3 class="projects-card__title">
-            Fylo Landin Page
-        </h3>
-        <p class="projects-card__description">
-Landing page with user activity enabled
-        </p>
-        <a href="" class="projects-card__btn">Visit</a>
+        <!-- Fylo -->
+        <div class="projects-card">
+            <img src="../imgs/fylo.png" alt="" class="projects-card__img">
+            <div class="projects-card__details">
+                <h3 class="projects-card__title">
+                    Fylo Landing Page
+                </h3>
+                <p class="projects-card__description">
+                    This dark-theme landing page stores all your most important files in one secure location.
+                </p>
+                <a href="https://nkirukka.github.io/submodules/fylo-dark-theme-landing-page/"
+                    class="projects-card__btn">Visit &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Sunny Side -->
+        <div class="projects-card">
+            <img src="../imgs/sunny-side.png" alt="" class="projects-card__img">
+            <div class="projects-card__details">
+                <h3 class="projects-card__title">
+                    Sunny Side Agency
+                </h3>
+                <p class="projects-card__description">
+                    We are a full-service creative agency specializing in helping brands grow fast. </p>
+                <a href="https://nkirukka.github.io/submodules/sunny-side_agency/" class="projects-card__btn">Visit
+                    &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Four Card -->
+        <div class="projects-card">
+            <img src="../imgs/four-card.png" alt="" class="projects-card__img">
+            <div class="projects-card__details">
+                <h3 class="projects-card__title">
+                    Four Card Feature
+                </h3>
+                <p class="projects-card__description">
+                    Reliable, efficient delivery, powered by technology. </p>
+                <a href="https://nkirukka.github.io/submodules/four-card-feature/" class="projects-card__btn">Visit
+                    &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Preview Card -->
+        <div class="projects-card">
+            <img src="../imgs/prev-card.png" alt="" class="projects-card__img">
+            <div class="projects-card__details">
+                <h3 class="projects-card__title">
+                    Preview Perfume Card
+                </h3>
+                <p class="projects-card__description">
+                    Preview your choice of perfume before buying. </p>
+                <a href="https://nkirukka.github.io/submodules/product-preview-card-component/"
+                    class="projects-card__btn">Visit &rarr;</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Say Hello -->
+    <div class="cta">
+        <div class="cta-details">
+            <h3>Say Hello</h3>
+            <p>Got a question or proposal, or just want
+                to say hello? Go ahead.</p>
+            <div class="info">
+                <form action="" class="form-controls">
+                    <input type="text" name="" id="" placeholder="Enter your name">
+                    <input type="text" name="" id="" placeholder="Enter your email addresss">
+                    <textarea name="" id="" cols="40"
+                        rows="3">Hi, I will like you to be part of our upcoming project. How soon will you have the time?</textarea>
+                    <button type="submit">Shoot &rarr;</button>
+                </form>
+            </div>
+        </div>
     </div>
-</div>
-</section>
+
+    <footer>
+        <div class="logo">nK.</div>
+
+        <div class="footer-links">
+            <a href="">Projecs</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+
+        <!-- Socials -->
+        <div class="socials">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-at"></i>
+        </div>
+
+        <div class="copyright">
+            &copy; Nkiruka Ebele, 2022
+        </div>
+    </footer>
 
     <script src="../js/app.js"></script>
 </body>
