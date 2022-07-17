@@ -68,7 +68,6 @@ body {
   margin: 2em auto 0;
   .logo {
     font-family: var(--font-f-secular);
-    font-size: 2rem;
   }
   .burger {
     border: none;
@@ -147,30 +146,17 @@ body {
       position: relative;
       font-size: 2rem;
       width: 100%;
-      color: var(--lime);
+      color: #fff;
       text-transform: uppercase;
       font-weight: 900;
       font-size: 1.8rem;
       font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
       padding: 0.4em 1em;
-      transition: color 0.3s, background-color 0.4s ease-out;
+      transition: color 0.3s, background-color 0.4s ease-in;
       &:hover {
-        background-color: hsl(81, 83%, 43%);
+        background-color: hsl(0, 0%, 100%);
         color: rgb(45, 35, 187);
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0.5em;
-        bottom: 0;
-        width: 100%;
-        height: 0.4vh;
-        border-radius: 3em;
-        background-color: var(--lime);
-        transform: scale(0, 1);
-        transform-origin: 0 0;
-        transition: transform 0.8s ease;
       }
     }
   }
@@ -296,7 +282,6 @@ body {
   h2 {
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 0px 1.2px 0px rgb(0, 47, 255);
     font-size: 2rem;
     font-weight: 400;
     font-family: "Secular One", serif;
@@ -307,9 +292,12 @@ body {
     margin-bottom: 4em;
     max-width: 410px;
     margin: 7em auto;
+    background-color: hsla(0, 0%, 100%, 0.767);
+    border-radius: 9px;
     box-shadow: -1px 15px 24px -20px rgba(0, 0, 0, 0.75);
     .p-img-container {
-      max-width: 400px;
+      max-width: 100%;
+      height: 300px;
       margin: auto;
       box-shadow: -1px 15px 24px -20px rgba(0, 0, 0, 0.75);
     }
@@ -321,9 +309,8 @@ body {
     }
     &__img {
       width: 100%;
-      height: 50vh;
-      max-height: 339px;
-      object-fit: cover;
+      height: 100%;
+      object-fit:cover;
       border-radius: 3px;
     }
     &__title {
@@ -376,12 +363,14 @@ body {
     background-color: hsl(219, 100%, 90%);
     border-radius: 1em;
     padding: 2em;
+    p{
+      margin-bottom: 2em;
+    }
     h3 {
       text-transform: uppercase;
       letter-spacing: 0.2em;
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-      font-weight: 900;
+      font-family: var(--font-f-secular);
+      font-weight: 500;
       opacity: 0.6;
       margin-bottom: 0.8em;
     }
@@ -392,11 +381,12 @@ body {
       align-items: center;
       input,
       textarea {
+        width: 100%;
         background: none;
         border: none;
         outline: none;
         border-radius: 0;
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid rgba(51, 51, 51, 0.363);
       }
       input {
         margin: 2em 0;
@@ -410,7 +400,9 @@ body {
       textarea {
         color: rgb(48, 43, 43);
         padding: 0;
+        margin: 0;
         resize: none;
+        overflow-y: scroll;
       }
     }
   }
@@ -449,6 +441,7 @@ footer {
     a {
       color: white;
       opacity: 0.7;
+      font-size: 1rem;
       margin-bottom: 0.8em;
       transition: color 0.3s, opacity 0.3s;
       &:hover {
@@ -482,6 +475,9 @@ footer {
 
 /* || Media Queries */
 @media only screen and (min-width: 753px) {
+  .nav-box .logo{
+    font-size: 2rem;
+  }
   .hero {
     .hero-details {
       display: flex;
@@ -531,16 +527,16 @@ footer {
       }
     }
   }
-  .hero{
-    .hero-details{
-        &__name{
-            font-size: 1.5rem;
-            left: 0;
-            margin: 0;
-        }
-        &__title{
-            font-size: 4rem;
-        }
+  .hero {
+    .hero-details {
+      &__name {
+        font-size: 1.5rem;
+        left: 0;
+        margin: 0;
+      }
+      &__title {
+        font-size: 4rem;
+      }
     }
   }
   .burger {
@@ -565,27 +561,36 @@ footer {
   }
 
   .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 3em;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-.projects{
+  .projects {
     max-width: 1200px;
-    .projects-card{
-        max-width: 800px;
-        .p-img-container{
-            max-width: 500px;
-        }
+    .projects-card {
+      max-width: 800px;
+      flex: 1 0 45%;
+      margin: 1em;
+      overflow-y: hidden;
+      .p-img-container {
+        max-width: 500px;
+        height: 400px;
       }
-}
+      &__details{
+        border-bottom: none;
+      }
+    }
+  }
   .projects-card:nth-of-type(1)::before {
     transform: scale(2) rotate(-45deg);
     top: 40%;
     left: -0%;
   }
-}
 
-.footer-links a{
-    font-size: 1.8rem;
+  
+footer .footer-links {
+  a {
+    font-size: 1.7rem;
+  }
+}
 }
