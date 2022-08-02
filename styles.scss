@@ -226,7 +226,7 @@ background: var(--primary-clr);
       url("../imgs/blob-scene-haikei.svg");
     background-size: 150px, 120px, 200px;
     background-repeat: no-repeat;
-    background-position: 40% 10%, 90% 26%, -20% 100%;
+    background-position: 40% 10%, 105% 96%, -20% 100%;
     max-width: 26em;
     min-width: 20.2em;
     margin: 0 auto 3em;
@@ -292,7 +292,7 @@ background: var(--primary-clr);
   position: relative;
 
   .skills{
-    width: 400px;
+    width: 300px;
   }
 
   h2 {
@@ -355,13 +355,14 @@ background: var(--primary-clr);
   max-width: 605px;
   margin: 0 auto 0em;
   text-align: center;
-  background-color: hsl(180, 70%, 69%);
+  // background-color: hsl(180, 70%, 69%);
   color: rgb(37, 35, 34);
   &-details {
     width: 100%;
     position: absolute;
     top: -15em;
-    background-color: hsl(219, 100%, 90%);
+    background-color: rgb(233, 197, 238);
+    // background-color: hsl(219, 100%, 90%);
     border-radius: 1em;
     padding: 2em;
     p {
@@ -391,7 +392,7 @@ background: var(--primary-clr);
         border-bottom: 1px solid rgba(51, 51, 51, 0.363);
       }
       input {
-        margin: 2em 0;
+        margin: 1em 0;
         text-align: center;
         padding-bottom: 0.3em;
         opacity: 0.9;
@@ -404,10 +405,12 @@ background: var(--primary-clr);
         color: rgb(48, 43, 43);
         font-size: 1.2rem;
         padding: 0;
-        margin: 0;
+        margin-top: .5em;
         resize: none;
         overflow-y:visible;
         &::placeholder {
+          color: rgb(48, 43, 43);
+          opacity: .9;
           text-align: center;
           padding: 0;
         }
