@@ -220,7 +220,7 @@ body {
   background: url("../imgs/bot.png"), url("../imgs/mrdot.png"), url("../imgs/blob-scene-haikei.svg");
   background-size: 150px, 120px, 200px;
   background-repeat: no-repeat;
-  background-position: 40% 10%, 90% 26%, -20% 100%;
+  background-position: 40% 10%, 105% 96%, -20% 100%;
   max-width: 26em;
   min-width: 20.2em;
   margin: 0 auto 3em;
@@ -284,7 +284,7 @@ body {
   position: relative;
 }
 .projects .skills {
-  width: 400px;
+  width: 300px;
 }
 .projects h2 {
   text-align: center;
@@ -347,14 +347,13 @@ body {
   max-width: 605px;
   margin: 0 auto 0em;
   text-align: center;
-  background-color: hsl(180deg, 70%, 69%);
   color: rgb(37, 35, 34);
 }
 .cta-details {
   width: 100%;
   position: absolute;
   top: -15em;
-  background-color: hsl(219deg, 100%, 90%);
+  background-color: rgb(233, 197, 238);
   border-radius: 1em;
   padding: 2em;
 }
@@ -386,7 +385,7 @@ body {
   border-bottom: 1px solid rgba(51, 51, 51, 0.363);
 }
 .cta-details .form-controls input {
-  margin: 2em 0;
+  margin: 1em 0;
   text-align: center;
   padding-bottom: 0.3em;
   opacity: 0.9;
@@ -407,19 +406,25 @@ body {
   color: rgb(48, 43, 43);
   font-size: 1.2rem;
   padding: 0;
-  margin: 0;
+  margin-top: 0.5em;
   resize: none;
   overflow-y: visible;
 }
 .cta-details .form-controls textarea::-moz-placeholder {
+  color: rgb(48, 43, 43);
+  opacity: 0.9;
   text-align: center;
   padding: 0;
 }
 .cta-details .form-controls textarea:-ms-input-placeholder {
+  color: rgb(48, 43, 43);
+  opacity: 0.9;
   text-align: center;
   padding: 0;
 }
 .cta-details .form-controls textarea::placeholder {
+  color: rgb(48, 43, 43);
+  opacity: 0.9;
   text-align: center;
   padding: 0;
 }
