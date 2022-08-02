@@ -27,18 +27,19 @@
             <!-- Nav Links Container for mobile menu -->
             <div class="nav-links__container flex">
                 <div class="mob-menu flex">
-                    <div class="logo">nK.</div>
+                    <!-- <div class="logo">nK.</div> -->
 
                     <!-- Close Icon -->
                     <button type="button" class="close-icon">
-                        <div class="line1 lines"></div>
-                        <div class="line2 lines"></div>
+                        &rarr;
+                        <!-- <div class="line1 lines"></div>
+                        <div class="line2 lines"></div> -->
                     </button>
                 </div>
                 <!-- Nav Links -->
                 <ul class="nav-links flex">
                     <li><a href="">Home</a></li>
-                    <li><a href="">Projects</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
@@ -48,7 +49,7 @@
             <!-- Desktop Menu -->
             <ul class="links flex">
                 <li><a href="">Home</a></li>
-                <li><a href="">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
@@ -70,13 +71,30 @@
                 I love to craft beautiful, efficient and scalable websites with
                 great user experiences, and I'd love to work on your next project.
             </p>
-            <a href="mailto:specialebele@gmail.com" class="btn">Contact Me</a>
+            <a href="mailto:specialebele@gmail.com" class="btn_contact">Contact Me</a>
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <h2>Key Projects</h2>
-
+<div class="skills">
+    <button class="skill node">NodeJS</button>
+    <button class="skill scss">SCSS</button>
+    <button class="skill css-grid">CSS Grid</button>
+    <button class="skill tailwind">Tailwind</button>
+    <button class="skill react">React</button>
+    <button class="skill javascript">JavaScript</button>
+    <button class="skill mongo">MongoDB</button>
+    <button class="skill mongoose">Mongoose</button>
+    <button class="skill sql">SQL</button>
+    <button class="skill psql">Postgresql</button>
+    <button class="skill alchemy">SqlAlchemy</button>
+    <button class="skill flask">Flask</button>
+    <button class="skill linux">Linux</button>
+    <button class="skill git">Git/Github</button>
+    <button class="skill vagrant">Vagrant</button>
+    <button class="skill bash">Bash Scripting</button>
+</div>
         <div class="projects-grid">
             
         <!-- Fylo -->
@@ -91,8 +109,11 @@
                 <p class="projects-card__description">
                     This dark-theme landing page stores all your most important files in one secure location.
                 </p>
-                <a href="https://nkirukka.github.io/submodules/fylo-dark-theme-landing-page/"
-                    class="projects-card__btn">Visit &rarr;</a>
+                <div class="link_container flex">
+                    <a href="https://nkirukka.github.io/submodules/fylo-dark-theme-landing-page/"
+                    class="btn">Visit &rarr;</a>
+                    <a href="https://github.com/nkirukka/fylo-dark-theme-landing-page" class="btn btn_code">Code &rarr;</a>
+                </div>
             </div>
         </div>
 
@@ -107,8 +128,12 @@
                 </h3>
                 <p class="projects-card__description">
                     We are a full-service creative agency specializing in helping brands grow fast. </p>
-                <a href="https://nkirukka.github.io/submodules/sunny-side_agency/" class="projects-card__btn">Visit
-                    &rarr;</a>
+                
+                    <div class="link_container flex">
+                        <a href="https://nkirukka.github.io/submodules/sunny-side_agency/" class="btn">Visit
+                            &rarr;</a>
+                        <a href="https://github.com/nkirukka/sunny-side_agency" class="btn btn_code">Code &rarr;</a>
+                    </div>
             </div>
         </div>
 
@@ -123,8 +148,11 @@
                 </h3>
                 <p class="projects-card__description">
                     Had much fun creating this. </p>
-                <a href="https://nkirukka.github.io/submodules/four-card-feature/" class="projects-card__btn">Visit
-                    &rarr;</a>
+                    <div class="link_container flex">
+                        <a href="https://nkirukka.github.io/" class="btn">Visit
+                            &rarr;</a>
+                        <a href="https://github.com/nkirukka/nkirukka.github.io" class="btn btn_code">Code &rarr;</a>
+                    </div>
             </div>
         </div>
 
@@ -139,8 +167,12 @@
                 </h3>
                 <p class="projects-card__description">
                     Preview your choice of perfume before buying. </p>
-                <a href="https://nkirukka.github.io/submodules/product-preview-card-component/"
-                    class="projects-card__btn">Visit &rarr;</a>
+
+                    <div class="link_container flex">
+                        <a href="https://nkirukka.github.io/submodules/product-preview-card-component/" class="btn">Visit
+                            &rarr;</a>
+                        <a href="https://github.com/nkirukka/product-preview-card-component/" class="btn btn_code">Code &rarr;</a>
+                    </div>
             </div>
         </div>
         </div>
@@ -155,11 +187,11 @@
                 to say hello? Go ahead.</p>
             <div class="info">
                 <form action="" class="form-controls">
-                    <input type="text" name="" id="" placeholder="Enter your name">
-                    <input type="text" name="" id="" placeholder="Enter your email addresss">
+                    <input type="text" name="" id="" placeholder="Your Name">
+                    <input type="text" name="" id="" placeholder="Your Email Addresss">
                     <textarea name="" id="" cols="40"
-                        rows="2">Hi, I will like you to be part of our upcoming project. How soon will you have the time?</textarea>
-                    <button type="submit">Shoot &rarr;</button>
+                        rows="2" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Shoot &rarr;</button>
                 </form>
             </div>
         </div>
@@ -171,15 +203,15 @@
         <div class="footer-links">
             <a href="">Projects</a>
             <a href="">About</a>
-            <a href="">Contact</a>
+            <a href="mailto:specialebele@gmail.com">Contact</a>
         </div>
 
         <!-- Socials -->
         <div class="socials">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-solid fa-at"></i>
+            <a href="https://instagram.com/nkirukka.fullstack"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/nkiruka-ebele-8b03bb17a/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="mailto:specialebele@gmail.com"><i class="fa-solid fa-at"></i></a>
         </div>
 
         <div class="copyright">
