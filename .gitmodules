@@ -28,3 +28,6 @@
 [submodule "submodules/product-preview-card-component"]
 	path = submodules/product-preview-card-component
 	url = https://github.com/nkirukka/product-preview-card-component.git
+[submodule "manage-landing-page"]
+	path = manage-landing-page
+	url = https://github.com/nkirukka/manage-landing-page.git
