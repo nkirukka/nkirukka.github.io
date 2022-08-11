@@ -36,6 +36,7 @@ body {
   font-family: var(--font-f-nunito);
   background-color: var(--white);
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 @mixin position($pos, $top, $left, $bottom, $right) {
@@ -123,6 +124,7 @@ background: var(--primary-clr);
       margin-top: 0.8em;
     }
   }
+
 
   .nav-links__container {
     @include position(absolute, -2em, 100vw, null, 0);
