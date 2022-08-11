@@ -217,10 +217,10 @@ body {
   padding-bottom: 4em;
 }
 .hero-img-container {
-  background: url("../imgs/illustrations/bot.png"), url("../imgs/illustrations/mrdot.png"), url("../imgs/illustrations/blob-scene-haikei.svg");
-  background-size: 150px, 120px, 200px;
+  background: url("../imgs/illustrations/bot.png"), url("../imgs/illustrations/mrdot.png");
+  background-size: 150px, 120px;
   background-repeat: no-repeat;
-  background-position: 40% 10%, 100% 96%, -20% 100%;
+  background-position: 40% 10%, 100% 96%;
   max-width: 26em;
   min-width: 20.2em;
   margin: 0 auto 3em;
